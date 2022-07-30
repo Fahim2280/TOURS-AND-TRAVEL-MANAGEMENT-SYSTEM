@@ -3,13 +3,13 @@
 <head>
     <link rel="stylesheet" href="./view/card.css" />
 </head>
-<form action="search.php" method="get" enctype="">
+<form action="./controller/search.php" method="POST" enctype="">
     <fieldset style="background-color:DodgerBlue;">
         <h1>Booking.com</h1>
         <table>
             <tr>
                 <td>Search </td>
-                <td><input type="text" name="search" value=""></td>
+                <td><input type="text" name="Name" value=""></td>
                 <td><button type="submit" name="search" value="SEARCH BY ID">Search</button></td>
             </tr>
             <tr>

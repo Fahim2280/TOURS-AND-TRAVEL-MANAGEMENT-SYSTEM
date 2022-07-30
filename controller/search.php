@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 
 <head>
-    <link rel="stylesheet" href="./view/card.css" />
+    <link rel="stylesheet" href="../view/card.css" />
 </head>
 
 <body>
-    <form action="Search.php" method="get" enctype="">
+    <form action="./search.php" method="POST" enctype="">
         <fieldset style="background-color:DodgerBlue;">
             <h1>Booking.com</h1>
             <table>
                 <tr>
                     <td>Search </td>
-                    <td><input type="text" name="search" value=""></td>
-                    <td><button type="submit">Search</button></td>
+                    <td><input type="text" name="Name" value=""></td>
+                    <td><button type="submit" name="search" value="SEARCH BY ID">Search</button></td>
                 </tr>
                 <tr>
                     <td><a href="SignUp.html"> View Gallery </a> <br></td>
@@ -22,10 +22,12 @@
         </from>
         <?php
         require './dbConnection.php';
-        $queray_run = mysqli_query($conn, $sql);
+        
 
         if (isset($_POST['search'])) {
-            $id = $_POST['name'];
+            $name = $_POST['Name'];
+            $sql = "select * from event where Name ='$name'";
+            $queray_run = mysqli_query($conn, $sql);
             while ($row = mysqli_fetch_array($queray_run)) {
         ?>
 

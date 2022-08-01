@@ -5,7 +5,7 @@
 </head>
 
 <body>
-    <form action="./search.php" method="POST" enctype="" >
+    <form action="./search.php" method="POST" enctype="" onsubmit="return validateadd()">
         <fieldset style="background-color:DodgerBlue;">
             <h1>Booking.com</h1>
             <table>
@@ -23,9 +23,9 @@
 
         <script>
             function validateadd(){
-                let Search = document.getElementById("Name").value;
+                let Name = document.getElementById("Name").value;
 
-                if (Search != "") {
+                if (Name != "") {
                     return true;
                 } else {
                     alert("null value");
@@ -33,7 +33,6 @@
                 }
             }
         </script>
-        
         <?php
 
         require './dbConnection.php';

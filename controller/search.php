@@ -5,13 +5,13 @@
 </head>
 
 <body>
-    <form action="./search.php" method="POST" enctype="">
+    <form action="./search.php" method="POST" enctype="" >
         <fieldset style="background-color:DodgerBlue;">
             <h1>Booking.com</h1>
             <table>
                 <tr>
                     <td>Search </td>
-                    <td><input type="text" name="Name" value=""></td>
+                    <td><input type="text" id="Name" name="Name" value=""></td>
                     <td><button type="submit" name="search" value="SEARCH BY ID">Search</button></td>
                 </tr>
                 <tr>
@@ -20,6 +20,20 @@
             </table>
         </fieldset>
         </from>
+
+        <script>
+            function validateadd(){
+                let Search = document.getElementById("Name").value;
+
+                if (Search != "") {
+                    return true;
+                } else {
+                    alert("null value");
+                    return false;
+                }
+            }
+        </script>
+        
         <?php
 
         require './dbConnection.php';

@@ -23,7 +23,9 @@ if ($Name == null || $H_M_day == null || $Description == null ||  $filename == n
    $data['H_M_day'] = $H_M_day;
    $data['Description'] = $Description;
    $data['file_location'] = $uploc . $filename;
-   addEvent($data);
+   updateEvent($data);
 
    echo "<h1 align= center> NEW TRIP ADDED SUCCESSFULLY <h1/>";
+
+   header("location: ../view/eventData.html");
 }

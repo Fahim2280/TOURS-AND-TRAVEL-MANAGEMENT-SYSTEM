@@ -60,7 +60,7 @@ function updateEvent($user)
 {
     $conn = getConnection();
 
-    $sql = "update event SET  Name='{$user['Name']}', H_M_day='{$user[' H_M_day']}',Event='{$user['Event']}',image='{$user['image']}' WHERE serial= {$user['serial']}";
+    $sql = "update event SET Name='{$user['Name']}', H_M_day='{$user['H_M_day']}',Description='{$user['Description']}',image='{$user['filename']}' WHERE serial= {$user['serial']}";
 
 
     if (mysqli_query($conn, $sql)) {

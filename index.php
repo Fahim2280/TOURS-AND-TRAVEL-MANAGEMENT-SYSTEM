@@ -39,7 +39,7 @@
                         <img src="" id="card-image"><?php echo $row['image']; ?></img>
                         <h2 id="title"><?php echo $row['Name'];  ?></h2>
                         <h4 id="H-M-day"><?php echo $row['H_M_day']; ?></h4>
-                        <p id="description"><?php echo $row['Event']; ?></p>
+                        <p id="description"><?php echo $row['Description']; ?></p>
                         <a href="">READ MORE</a>
                     </div>
             </section>

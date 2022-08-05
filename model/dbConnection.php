@@ -16,7 +16,8 @@ function getConnection()
     return $conn;
 }
 
-function showAllEvent(){
+function showAllEvent()
+{
 
     $conn = getConnection();
     $sql = "select * from event";
@@ -25,7 +26,6 @@ function showAllEvent(){
 
     mysqli_close($conn);
     return $result;
-
 }
 
 function addEvent($data)
@@ -33,7 +33,7 @@ function addEvent($data)
 
     $conn = getConnection();
 
-    $sql = "insert into event  ( Name, H_M_day, Event, image) values( '{$data['Name']}', '{$data['H_M_day']}','{$data['Event']}','{$data['image']}')";
+    $sql = "insert into event  ( Name, H_M_day, Description, image) values( '{$data['Name']}', '{$data['H_M_day']}','{$data['Description']}','{$data['file_location']}')";
 
     if (mysqli_query($conn, $sql)) {
         return;
@@ -69,6 +69,3 @@ function updateEvent($user)
         return false;
     }
 }
-
-
-?>

@@ -6,7 +6,7 @@
     <title>
         Event Data insert
     </title>
-    <form action="" method="" enctype="">
+    <form action="../controller/eventDataUplode.php" method="post" enctype="multipart/form-data">
 
         <h1>Data table</h1>
 
@@ -15,7 +15,6 @@
                 <td>SEARCH</td>
                 <td><input type="text" name="SEARCH " value=""></td>
             </tr>
-
         </table>
 
         <br>
@@ -32,15 +31,15 @@
         <table>
             <tr>
                 <td>Place name </td>
-                <td><input type="text" id="name" name="Name" value=""></td>
+                <td><input type="text" id="Name" name="Name" value=""></td>
             </tr>
             <tr>
                 <td>How many day </td>
-                <td><input type="text" id="H-M-day" name="Name" value=""></td>
+                <td><input type="text" id="H_M_day" name="H_M_day" value=""></td>
             </tr>
             <tr>
                 <td>Card description </td>
-                <td><textarea id="description" name="" rows=" 4" cols="50"></textarea></td>
+                <td><textarea id="Description" name="Description" rows=" 4" cols="50"></textarea></td>
             </tr>
             <tr>
                 <td>Image </td>

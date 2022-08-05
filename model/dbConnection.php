@@ -42,11 +42,11 @@ function addEvent($data)
     }
 }
 
-function deleteEvent($user)
+function deleteEvent($data)
 {
     $conn = getConnection();
 
-    $sql = "delete from event where serial={$user['serial']}";
+    $sql = "delete from event where serial={$data['serial']}";
 
 
     if (mysqli_query($conn, $sql)) {
@@ -56,11 +56,11 @@ function deleteEvent($user)
     }
 }
 
-function updateEvent($user)
+function updateEvent($data)
 {
     $conn = getConnection();
 
-    $sql = "update event SET Name='{$user['Name']}', H_M_day='{$user['H_M_day']}',Description='{$user['Description']}',image='{$user['filename']}' WHERE serial= {$user['serial']}";
+    $sql = "update event SET Name='{$data['Name']}', H_M_day='{$data['H_M_day']}',Description='{$data['Description']}'}' WHERE serial= {$data['serial']}";
 
 
     if (mysqli_query($conn, $sql)) {

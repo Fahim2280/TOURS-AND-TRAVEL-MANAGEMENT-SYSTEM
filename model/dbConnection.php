@@ -33,7 +33,7 @@ function addEvent($data)
 
     $conn = getConnection();
 
-    $sql = "insert into train  ( Name, H_M_day, Event, image) values( '{$data['Name']}', '{$data['H_M_day']}','{$data['Event']}','{$data['image']}')";
+    $sql = "insert into event  ( Name, H_M_day, Event, image) values( '{$data['Name']}', '{$data['H_M_day']}','{$data['Event']}','{$data['image']}')";
 
     if (mysqli_query($conn, $sql)) {
         return;
@@ -41,5 +41,34 @@ function addEvent($data)
         return false;
     }
 }
+
+function deleteEvent($user)
+{
+    $conn = getConnection();
+
+    $sql = "delete from event where serial={$user['serial']}";
+
+
+    if (mysqli_query($conn, $sql)) {
+        return;
+    } else {
+        return false;
+    }
+}
+
+function updateEvent($user)
+{
+    $conn = getConnection();
+
+    $sql = "update event SET  Name='{$user['Name']}', H_M_day='{$user[' H_M_day']}',Event='{$user['Event']}',image='{$user['image']}' WHERE serial= {$user['serial']}";
+
+
+    if (mysqli_query($conn, $sql)) {
+        return;
+    } else {
+        return false;
+    }
+}
+
 
 ?>

@@ -28,7 +28,7 @@
     <?php
 
     require './model/dbConnection.php';
-
+    $result=showAllEvent();
     while ($row = mysqli_fetch_assoc($result)) {
     ?>
 
@@ -45,7 +45,7 @@
             </section>
         </body>
     <?php
-
+   
     }
 
     ?>

@@ -1,7 +1,7 @@
 <?php
 
 $host = "localhost";
-$dbname = "travelmanagement";
+$dbname = "tours_and_travel";
 $dbpass = "";
 $dbuser = "root";
 
@@ -16,16 +16,15 @@ function getConnection()
     return $conn;
 }
 
-function showAllEvent($data){
+function showAllEvent(){
 
     $conn = getConnection();
     $sql = "select * from event";
 
-    if (mysqli_query($conn, $sql)) {
-        return;
-    } else {
-        return false;
-    }
+    $result = mysqli_query($conn, $sql);
+
+    mysqli_close($conn);
+    return $result;
 
 }
 

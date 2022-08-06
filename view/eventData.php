@@ -6,26 +6,15 @@
     <title>
         Event Data insert
     </title>
-     <h1>Data table</h1>
+    <h1>Data table</h1>
 
-        <table align="center">
-            <tr>
-                <td>SEARCH</td>
-                <td><input type="text" name="SEARCH " value=""></td>
-            </tr>
-        </table>
-
-        <br>
-
-        <table align="center" border="1px" cellpadding="1px" cellspacing="2px">
-            <tr>
-                <th>Serial</th>
-                <th>Name</th>
-                <th>How many day</th>
-                <th>Description</th>
-                <th>Image</th>
-            </tr>
-        </table>
+    <table align="center">
+        <tr>
+            <td>SEARCH</td>
+            <td><input type="text" name="SEARCH " value=""></td>
+        </tr>
+    </table>
+    <br>
 
     <form action="../controller/eventDataAdd.php" method="post" enctype="">
 
@@ -55,12 +44,12 @@
     </form>
 
     <form action="../controller/eventDataUpdate.php" method="post" enctype="">
-        
+
         <h1>Update data</h1>
         <table>
             <tr>
                 <td>SERIAL</td>
-			    <td><input type="text" id="SERIAL_2" name="SERIAL" value=""></td>
+                <td><input type="text" id="SERIAL_2" name="SERIAL" value=""></td>
             </tr>
 
             <tr>
@@ -83,24 +72,24 @@
                 <td><input type="submit" id="button" name="uplode" value="Update"></td>
             </tr>
         </table>
+    </form>
 
-    </form action="../controller/eventDataUpdate" method="post" enctype="">
+    </form action="../controller/eventDataDelet.php" method="post" enctype="">
 
-        <h1>Delet data</h1>
-        <table>
-				<tr>
-					<td>SERIAL</td>
-					<td><input type="text" id="SERIAL" name="SERIAL" value=""></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td><input type="submit" class="delet_box" name="" id ="submit" value="Delet"></td>
-				</tr>
-		</table>
+    <h1>Delet data</h1>
+    <table>
+        <tr>
+            <td>SERIAL</td>
+            <td><input type="text" id="SERIAL" name="SERIAL" value=""></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" class="delet_box" name="" id="submit" value="Delet"></td>
+        </tr>
+    </table>
 
     <form>
 
-    </form>
 </body>
 </head>
 

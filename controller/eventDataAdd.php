@@ -5,7 +5,7 @@ require_once ('../model/dbConnection.php');
 $Name = $_REQUEST['Name'];
 $H_M_day = $_REQUEST['H_M_day'];
 $Description = $_REQUEST['Description'];
-$filename = $_FILES['filename']['name'];
+$filename = $_FILES['filename'];
 $tmp_loc = $_FILES['filename']['tmp_name'];
 
 $uploc = '../image/';

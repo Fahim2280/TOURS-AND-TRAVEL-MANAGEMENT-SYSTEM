@@ -46,7 +46,7 @@ function deleteEvent($data)
 {
     $conn = getConnection();
 
-    $sql = "delete from event where serial={$data['serial']}";
+    $sql = "delete from event where serial='{$data['serial']}'";
 
 
     if (mysqli_query($conn, $sql)) {

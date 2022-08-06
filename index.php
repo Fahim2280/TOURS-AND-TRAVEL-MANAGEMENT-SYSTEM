@@ -20,23 +20,21 @@
 
     <script>
         let content = document.getElementById('searchId');
-
-       
-            
     </script>
 
     <?php
 
-    require_once ('./model/dbConnection.php');
-    $result=showAllEvent();
+    require_once('./model/dbConnection.php');
+    $result = showAllEvent();
     while ($row = mysqli_fetch_assoc($result)) {
+        $img = $row['image'];
     ?>
 
         <body>
             <section class="container">
                 <div class="col-md-3">
                     <div class="card">
-                        <img src="" id="card-image"><?php echo $row['image']; ?></img>
+                        <img src="<?php echo $img ?>" class="card-image"></img>
                         <h2 id="title"><?php echo $row['Name'];  ?></h2>
                         <h4 id="H-M-day"><?php echo $row['H_M_day']; ?></h4>
                         <p id="description"><?php echo $row['Description']; ?></p>
@@ -45,7 +43,7 @@
             </section>
         </body>
     <?php
-   
+
     }
 
     ?>

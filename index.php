@@ -27,7 +27,7 @@
 
     <?php
 
-    require './model/dbConnection.php';
+    require_once ('./model/dbConnection.php');
     $result=showAllEvent();
     while ($row = mysqli_fetch_assoc($result)) {
     ?>

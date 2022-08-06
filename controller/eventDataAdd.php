@@ -5,7 +5,7 @@ require_once ('../model/dbConnection.php');
 $Name = $_REQUEST['Name'];
 $H_M_day = $_REQUEST['H_M_day'];
 $Description = $_REQUEST['Description'];
-$filename = $_FILES['filename'];
+$filename = $_FILES['filename']['name'];
 $tmp_loc = $_FILES['filename']['tmp_name'];
 
 $uploc = '../image/';
@@ -13,7 +13,7 @@ $uploc = '../image/';
 if (!empty($filename)) {
     move_uploaded_file($tmp_loc, $uploc . $filename);
 } else {
-    echo 'select a file';
+    echo "select a file";
 }
 
 if ($Name == null || $H_M_day == null || $Description == null ||  $filename == null || $tmp_loc == null) {
@@ -24,7 +24,7 @@ if ($Name == null || $H_M_day == null || $Description == null ||  $filename == n
     $data['Description'] = $Description;
     $data['file_location'] = $uploc . $filename;
     addEvent($data);
-    echo "<h1 align= center> NEW TRIP ADDED SUCCESSFULLY <h1/>";
+    echo "<h1 align= center> NEW TRIP ADDED SUCCESSFULLY </h1>";
 }
 
 ?>

@@ -34,7 +34,7 @@
             </tr>
             <tr>
                 <td>Image </td>
-                <td><input type="file" id="myFile" name="filename"></td>
+                <td><input type="file" id="filename" name="filename"></td>
             </tr>
             <tr>
                 <td><input type="submit" id="button" name="uplode" value="confirm"></td>
@@ -74,21 +74,20 @@
         </table>
     </form>
 
-    </form action="../controller/eventDataDelet.php" method="post" enctype="">
+    <form action="../controller/eventDataDelet.php" method="post" enctype="">
 
-    <h1>Delet data</h1>
-    <table>
-        <tr>
-            <td>SERIAL</td>
-            <td><input type="text" id="SERIAL" name="SERIAL" value=""></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td><input type="submit" class="delet_box" name="" id="submit" value="Delet"></td>
-        </tr>
-    </table>
+        <h1>Delet data</h1>
+        <table>
+            <tr>
+                <td>SERIAL</td>
+                <td><input type="text" id="SERIAL" name="SERIAL" value=""></td>
+            </tr>
+            <tr>
+                <td><input type="submit" class="delet_box" name="" id="submit" value="Delet"></td>
+            </tr>
+        </table>
 
-    <form>
+    </form>
 
 </body>
 </head>

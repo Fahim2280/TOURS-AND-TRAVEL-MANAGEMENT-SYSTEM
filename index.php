@@ -3,7 +3,7 @@
 <head>
     <link rel="stylesheet" href="./view/card.css" />
 </head>
-<form action="" method="POST" enctype="">
+<form action="./controller/viewGalleryData.php" method="POST" enctype="">
     <fieldset style="background-color:DodgerBlue;">
         <h1>Booking.com</h1>
         <table>
@@ -12,7 +12,7 @@
                 <td><input type="text" name="Name" value="" id="searchId" placeholder="searc"></td>
             </tr>
             <tr>
-                <td><a href="SignUp.html"> View Gallery </a> <br></td>
+                <td><a href="./view/viewGallery.php"> View Gallery </a> <br></td>
             </tr>
         </table>
     </fieldset>

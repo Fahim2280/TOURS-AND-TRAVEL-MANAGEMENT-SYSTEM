@@ -10,5 +10,5 @@ if ($SERIAL == null) {
     $data['serial'] = $SERIAL;
 deleteEvent($data);
 }
-//header("location: ../view/eventData.html");
+header("location: ../view/eventData.php");
 ?>

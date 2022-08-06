@@ -16,7 +16,7 @@
     </table>
     <br>
 
-    <form action="../controller/eventDataAdd.php" method="post" enctype="">
+    <form action="../controller/eventDataAdd.php" method="post" enctype="multipart/form-data">
 
         <h1>Card data</h1>
         <table>
@@ -34,7 +34,7 @@
             </tr>
             <tr>
                 <td>Image </td>
-                <td><input type="file" id="filename" name="filename"></td>
+                <td><input type="file" id="file" name="file"></td>
             </tr>
             <tr>
                 <td><input type="submit" id="button" name="uplode" value="confirm"></td>
@@ -43,7 +43,7 @@
         </table>
     </form>
 
-    <form action="../controller/eventDataUpdate.php" method="post" enctype="">
+    <form action="../controller/eventDataUpdate.php" method="post" enctype="multipart/form-data">
 
         <h1>Update data</h1>
         <table>
@@ -74,7 +74,7 @@
         </table>
     </form>
 
-    <form action="../controller/eventDataDelet.php" method="post" enctype="">
+    <form action="../controller/eventDataDelet.php" method="post" enctype="multipart/form-data">
 
         <h1>Delet data</h1>
         <table>

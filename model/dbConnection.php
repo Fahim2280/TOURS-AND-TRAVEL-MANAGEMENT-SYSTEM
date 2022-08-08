@@ -33,7 +33,7 @@ function addEvent($data)
 
     $conn = getConnection();
 
-    $sql = "insert into event  ( Name, H_M_day, Description, image) values( '{$data['Name']}', '{$data['H_M_day']}','{$data['Description']}','{$data['file_location']}')";
+    $sql = "insert into event  ( Name, H_M_day, Description, image,Place_Name, Food, Price) values( '{$data['Name']}', '{$data['H_M_day']}','{$data['Description']}','{$data['file_location']}','{$data['Place_Name']}','{$data['Food']}','{$data['Price']}')";
 
     if (mysqli_query($conn, $sql)) {
         return;
@@ -60,7 +60,7 @@ function updateEvent($data)
 {
     $conn = getConnection();
 
-    $sql = "update event SET Name='{$data['Name']}', H_M_day='{$data['H_M_day']}',Description='{$data['Description']}' WHERE serial= {$data['serial']}";
+    $sql = "update event SET Name='{$data['Name']}', H_M_day='{$data['H_M_day']}',Description='{$data['Description']}',Place_Name='{$data['Place_Name']}',Food='{$data['Food']}',Price='{$data['Price']}' WHERE serial= {$data['serial']}";
 
 
     if (mysqli_query($conn, $sql)) {

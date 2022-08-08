@@ -12,6 +12,9 @@
                 <th>Name</th>
                 <th>How many day</th>
                 <th>Description</th>
+                <th>Place Name</th>
+                <th>Food</th>
+                <th>Price</th>
                 <th>Image</th>
             </tr>
             <?php
@@ -29,6 +32,9 @@
             <td>" . $data['Name'] . "</td>
             <td>" . $data['H_M_day'] . "</td>
             <td>" . $data['Description'] . "</td>
+            <td>".$data['Place_Name']."</td>
+            <td>".$data['Food']."</td>
+            <td>".$data['Price']."</td>
             
             <td> <img src='$img' alt='' srcset='' width='100' height='100'></td>
         </tr>";

@@ -33,7 +33,7 @@ function addEvent($data)
 
     $conn = getConnection();
 
-    $sql = "insert into event  ( Name, H_M_day, Description, image,Place_Name, Food, Price) values( '{$data['Name']}', '{$data['H_M_day']}','{$data['Description']}','{$data['file_location']}','{$data['Place_Name']}','{$data['Food']}','{$data['Price']}')";
+    $sql = "insert into event  ( Name, H_M_day, Description, image, Place_Name, Food, Price) values( '{$data['Name']}', '{$data['H_M_day']}','{$data['Description']}','{$data['file_location']}','{$data['Place_Name']}','{$data['Food']}','{$data['Price']}')";
 
     if (mysqli_query($conn, $sql)) {
         return;

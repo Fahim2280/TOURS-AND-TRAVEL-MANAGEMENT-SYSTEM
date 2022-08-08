@@ -4,7 +4,7 @@
 
 <body>
     <title>TOURS AND TRAVEL</title>
-    <link rel="stylesheet" href="./view/card.css" />
+    <link rel="stylesheet" href="./view/eventCard.css" />
 
     <form action="./controller/viewGalleryData.php" method="POST" enctype="">
         <fieldset style="background-color:DodgerBlue;">

@@ -19,6 +19,4 @@ if ($SERIAL == null || $Name == null || $H_M_day == null || $Description == null
 }
 echo "<h1 align= center> UPDATE SUCCESSFULLY <h1/>";
 
-header("location: ../view/eventData.php");
-
 ?>

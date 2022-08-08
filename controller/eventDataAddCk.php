@@ -27,6 +27,4 @@ if ($Name == null || $H_M_day == null || $Description == null ||  $imagename == 
     echo "<h1 align= center> NEW TRIP ADDED SUCCESSFULLY </h1>";
 }
 
-header("location: ../view/eventData.php");
-
 ?>

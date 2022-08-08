@@ -3,7 +3,7 @@
 <head>
 
 <body>
-    <title>View Gallery</title>
+    <title>TOURS AND TRAVEL| Gallery</title>
 
     <form action="../controller/viewGalleryData.php" method="post" enctype="multipart/form-data">
         <tr>

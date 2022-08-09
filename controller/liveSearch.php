@@ -21,7 +21,7 @@ if (isset($_GET['input'])) {
         </table>
 <?
         while ($row = mysqli_fetch_assoc($result)) {
-            //$row['Name'] = htmlspecialchars_uni($row['Name']);
+            $row['Name'] = htmlspecialchars_uni($row['Name']);
             $data[] = array('serial'=>$row['serial']);
         }
         echo json_encode($data);

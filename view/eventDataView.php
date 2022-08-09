@@ -5,15 +5,15 @@
 <body>
     <title>TOURS AND TRAVEL | Event Data</title>
     <h1>Data table</h1>
-
+    <script src="../controller/search.js"></script>
     <table align="center">
         <tr>
             <td>SEARCH</td>
-            <td><input type="text" name="SEARCH " value=""></td>
+            <td><input type="text" name="search " value=""></td>
         </tr>
     </table>
     <br>
-    <form action="" method="post" enctype="">
+    <form action="../controller/liveSearch.php" method="post" enctype="">
 
         <table align="center" border="1px" cellpadding="1px" cellspacing="2px">
             <tr>
@@ -54,6 +54,8 @@
         </table>
 
     </form>
+
+    <div id="display"></div>
 
 </body>
 </head>

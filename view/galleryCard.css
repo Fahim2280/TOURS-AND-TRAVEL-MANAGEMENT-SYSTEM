@@ -18,7 +18,7 @@ body {
 .container {
   padding: 2px 16px;
   display: flex;
-  justify-content: left;
+  justify-content: center;
   flex-wrap: wrap;
   flex-direction: column-reverse;
 }
@@ -29,9 +29,12 @@ body {
 }
 
 .card img {
-  object-fit: cover;
+  background-color: aqua;
+  height: 150%;
+  margin-bottom: 15px;
   width: 100%;
-  height: 100%;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
 }
 
 .card:hover {
@@ -40,4 +43,8 @@ body {
   cursor: pointer;
   transform: scale(1.03);
   transition: all 1s ease;
+}
+.gallaryCard{
+  display: flex;
+  flex-direction: row;
 }

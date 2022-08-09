@@ -63,3 +63,8 @@ body {
   transform: scale(1.03);
   transition: all 1s ease;
 }
+
+.eventCard{
+  display: flex;
+  flex-direction: row;
+}

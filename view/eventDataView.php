@@ -9,7 +9,7 @@
     <table align="center">
         <tr>
             <td>SEARCH</td>
-            <td><input type="text" name="search " value=""></td>
+            <td><input type="text" name="search " value="" ></td>
         </tr>
     </table>
     <br>

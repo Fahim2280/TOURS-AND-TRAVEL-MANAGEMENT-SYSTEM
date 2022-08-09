@@ -18,6 +18,7 @@
             </tr>
             <br>
         </table>
+        <div class="gallaryCard">
         <?php
         require_once('../model/dbConnection.php');
 
@@ -42,7 +43,7 @@
         }
         ?>
     </form>
-
+</div>
 </body>
 </head>
 

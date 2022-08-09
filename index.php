@@ -24,16 +24,16 @@
         <script>
             let content = document.getElementById('searchId');
         </script>
+        <div class="eventCard">
+            <?php
 
-        <?php
+            require_once('./model/dbConnection.php');
+            $result = showAllEvent();
+            while ($row = mysqli_fetch_assoc($result)) {
+                $img = $row['image'];
+            ?>
 
-        require_once('./model/dbConnection.php');
-        $result = showAllEvent();
-        while ($row = mysqli_fetch_assoc($result)) {
-            $img = $row['image'];
-        ?>
 
-            <body>
                 <section class="container">
                     <div class="col-md-3">
                         <div class="card">
@@ -44,12 +44,10 @@
                             <a href="./view/readMore.php?serial=<?php echo $row['serial'] ?>">READ MORE</a>
                         </div>
                 </section>
-            </body>
-        <?php
-
-        }
-
-        ?>
+            <?php
+            }
+            ?>
+        </div>
 </body>
 </head>
 

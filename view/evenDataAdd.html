@@ -2,38 +2,40 @@
 <head>
     <body>
         <title>TOURS AND TRAVEL | Event Data</title>
-        
+        <script defer src="../controller/validation.js"></script>
+
     <form action="../controller/eventDataAddCk.php" method="post" enctype="multipart/form-data">
 
         <h1>Card data</h1>
         <table>
             <tr>
                 <td>Place name </td>
-                <td><input type="text" id="Name" name="Name" value=""></td>
+                <td><input type="text" id="Name" name="Name" value="" required></td>
+                <td><small>Error message</small></td>
             </tr>
             <tr>
                 <td>How many day </td>
-                <td><input type="text" id="H_M_day" name="H_M_day" value=""></td>
+                <td><input type="text" id="H_M_day" name="H_M_day" value="" required></td>
             </tr>
             <tr>
                 <td>Card description </td>
-                <td><textarea id="Description" name="Description" rows=" 4" cols="50"></textarea></td>
+                <td><textarea id="Description" name="Description" rows=" 4" cols="50" required></textarea></td>
             </tr>
             <tr>
                 <td>Place Name</td>
-                <td><input type="text" id="Place_Name" name="Place_Name" value=""></td>
+                <td><input type="text" id="Place_Name" name="Place_Name" value="" required></td>
             </tr>
             <tr>
                 <td>Food</td>
-                <td><textarea id="Food" name="Food" rows=" 4" cols="50"></textarea></td>
+                <td><textarea id="Food" name="Food" rows=" 4" cols="50" required></textarea></td>
             </tr>
             <tr>
                 <td>Price</td>
-                <td><input type="text" id="Price" name="Price" value=""></td>
+                <td><input type="text" id="Price" name="Price" value="" required></td>
             </tr>
             <tr>
                 <td>Image </td>
-                <td><input type="file" id="file" name="file"></td>
+                <td><input type="file" id="file" name="file" required></td>
             </tr>
             <tr>
                 <td><input type="submit" id="button" name="uplode" value="confirm"></td>
@@ -41,7 +43,8 @@
 
         </table>
     </form>
-        
+
+  
     </body>
 </head>
 </html>

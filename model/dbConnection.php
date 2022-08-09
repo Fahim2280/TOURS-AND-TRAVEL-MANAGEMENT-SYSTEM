@@ -36,7 +36,7 @@ function addEvent($data)
     $sql = "insert into event  ( Name, H_M_day, Description, image, Place_Name, Food, Price) values( '{$data['Name']}', '{$data['H_M_day']}','{$data['Description']}','{$data['file_location']}','{$data['Place_Name']}','{$data['Food']}','{$data['Price']}')";
 
     if (mysqli_query($conn, $sql)) {
-        return true;
+        return;
     } else {
         return false;
     }
@@ -68,4 +68,26 @@ function updateEvent($data)
     } else {
         return false;
     }
+}
+
+function columnData($serial)
+{
+    $conn = getConnection();
+
+    $sql = "select * from event where serial = serial";
+
+    $result = mysqli_query($conn, $sql);
+
+    mysqli_close($conn);
+    return $result;
+}
+
+function liveSearch($input){
+    $conn = getConnection();
+
+    $sql= "select * from event where Name LIKE '{$input}%' OR H_M_day LIKE'{$input}%' OR Description LIKE'{$input}%' OR serial LIKE'{$input}%' OR Place_Name LIKE'{$input}%' Food LIKE'{$input}%' OR `Price LIKE'{$input}%' ";
+    
+    $result = mysqli_query($conn, $sql);
+    mysqli_close($conn);
+    return $result;
 }

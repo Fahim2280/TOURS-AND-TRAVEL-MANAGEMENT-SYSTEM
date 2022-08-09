@@ -2,22 +2,23 @@
 <head>
     <body>
         <title>TOURS AND TRAVEL | Event Data</title>
-        <form action="../controller/eventDataUpdateCk.php" method="post" enctype="multipart/form-data">
+        <script defer src="../controller/validation.js"></script>
+        <form action="../controller/eventDataUpdateCk.php" method="post" enctype="multipart/form-data" onsubmit="return validate()">
 
         <h1>Update data</h1>
         <table>
             <tr>
                 <td>SERIAL</td>
-                <td><input type="text" id="SERIAL_2" name="SERIAL" value=""></td>
+                <td><input type="text" id="SERIAL" name="SERIAL" value="" ></td>
             </tr>
 
             <tr>
                 <td>Place name </td>
-                <td><input type="text" id="Name" name="Name" value=""></td>
+                <td><input type="text" id="Name" name="Name" value="" ></td>
             </tr>
             <tr>
                 <td>How many day </td>
-                <td><input type="text" id="H_M_day" name="H_M_day" value=""></td>
+                <td><input type="text" id="H_M_day" name="H_M_day" value="" ></td>
             </tr>
             <tr>
                 <td>Card description </td>
@@ -25,26 +26,25 @@
             </tr>
             <tr>
                 <td>Place Name</td>
-                <td><input type="text" id="Place_Name" name="Place_Name" value=""></td>
+                <td><input type="text" id="Place_Name" name="Place_Name" value="" ></td>
             </tr>
             <tr>
                 <td>Food</td>
-                <td><textarea id="Food" name="Food" rows=" 4" cols="50"></textarea></td>
+                <td><textarea id="Food" name="Food" rows=" 4" cols="50" ></textarea></td>
             </tr>
             <tr>
                 <td>Price</td>
-                <td><input type="text" id="Price" name="Price" value=""></td>
+                <td><input type="text" id="Price" name="Price" value="" ></td>
             </tr>
             <tr>
                 <td>Image </td>
-                <td><input type="file" id="myFile" name="filename"></td>
+                <td><input type="file" id="myFile" name="filename" ></td>
             </tr>
             <tr>
                 <td><input type="submit" id="button" name="uplode" value="Update"></td>
             </tr>
         </table>
     </form>
-
     </body>
 </head>
 </html>

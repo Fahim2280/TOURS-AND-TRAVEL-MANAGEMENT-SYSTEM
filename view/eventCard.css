@@ -12,7 +12,8 @@ body {
   display: flex;
   justify-content: left;
   flex-wrap: wrap;
-  flex-direction: column-reverse;
+  flex-flow: column wrap;
+  flex-direction:  column-reverse;
 }
 
 .card {

@@ -6,7 +6,7 @@
     <title>TOURS AND TRAVEL</title>
     <link rel="stylesheet" href="./view/eventCard.css" />
 
-    <form action="./controller/viewGalleryData.php" method="POST" enctype="">
+    <form action="" method="POST" enctype="">
         <fieldset style="background-color:DodgerBlue;">
             <h1>Booking.com</h1>
             <table>
@@ -41,7 +41,7 @@
                             <h2 id="title"><?php echo $row['Name'];  ?></h2>
                             <h4 id="H-M-day"><?php echo $row['H_M_day']; ?></h4>
                             <p id="description"><?php echo $row['Description']; ?></p>
-                            <a href="">READ MORE</a>
+                            <a href="./view/readMore.php?serial=<?php echo $row['serial'] ?>">READ MORE</a>
                         </div>
                 </section>
             </body>

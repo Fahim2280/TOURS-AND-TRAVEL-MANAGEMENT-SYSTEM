@@ -82,5 +82,4 @@
         <script src="./controller/slideShow.js"></script>
 </body>
 
-
 </html>

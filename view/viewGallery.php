@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 
 <head>
+    <title>TOURS AND TRAVEL| Gallery</title>
+</head>
 
 <body>
-    <title>TOURS AND TRAVEL| Gallery</title>
+
 
     <link rel="stylesheet" href="./galleryCard.css" />
 
@@ -19,32 +21,31 @@
             <br>
         </table>
         <div class="gallaryCard">
-        <?php
-        require_once('../model/dbConnection.php');
+            <?php
+            require_once('../model/dbConnection.php');
 
-        $result = showAllEvent();
+            $result = showAllEvent();
 
-        $num = mysqli_num_rows($result);
-        if ($num > 0) {
-            while ($data = mysqli_fetch_assoc($result)) {
-                $img = $data['image'];
-        ?>
+            $num = mysqli_num_rows($result);
+            if ($num > 0) {
+                while ($data = mysqli_fetch_assoc($result)) {
+                    $img = $data['image'];
+            ?>
 
-                <body>
-                    <section Class="container">
-                        <div class="col-md-3">
-                            <div class="card">
-                            <h2><?php echo $data['Place_Name']; ?></h2>
-                            <img src="<?php echo $img ?>" class="card-image"></img>
-                    </section>
-                </body>
-        <?php
+                    <body>
+                        <section Class="container">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <h2><?php echo $data['Place_Name']; ?></h2>
+                                    <img src="<?php echo $img ?>" class="card-image"></img>
+                        </section>
+                    </body>
+            <?php
+                }
             }
-        }
-        ?>
+            ?>
     </form>
-</div>
+    </div>
 </body>
-</head>
 
 </html>

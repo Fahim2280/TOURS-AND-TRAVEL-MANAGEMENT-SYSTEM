@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 
 <head>
+    <title>TOURS AND TRAVEL | Event Data</title>
+</head>
 
 <body>
-    <title>TOURS AND TRAVEL | Event Data</title>
+
     <h1>Data table</h1>
     <script src="../controller/search.js"></script>
     <table align="center">
         <tr>
             <td>SEARCH</td>
-            <td><input type="text" name="search " value="" ></td>
+            <td><input type="text" name="search " value=""></td>
         </tr>
     </table>
     <br>
@@ -58,6 +60,5 @@
     <div id="display"></div>
 
 </body>
-</head>
 
 </html>

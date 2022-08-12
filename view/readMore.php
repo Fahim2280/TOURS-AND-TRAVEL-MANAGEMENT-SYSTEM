@@ -1,6 +1,6 @@
 <!-- <!DOCTYPE html>
 
-<head>
+<head></head>
 
 <body>
     <title>TOURS AND TRAVEL | Details</title>
@@ -23,7 +23,7 @@
             ?>
          -->
 </body>
-</head>
+
 
 </html> -->
 <?
@@ -33,9 +33,9 @@ $result = showAllEvent();
 
 $num = mysqli_num_rows($result);
 if ($num > 0) {
-while ($data = mysqli_fetch_assoc($result)) {
-$img = $data['image'];
-echo "
+    while ($data = mysqli_fetch_assoc($result)) {
+        $img = $data['image'];
+        echo "
 <tr>
     <td>" . $data['serial'] . "</td>
     <td>" . $data['Name'] . "</td>
@@ -47,5 +47,5 @@ echo "
 
     <td> <img src='$img' alt='' srcset='' width='100' height='100'></td>
 </tr>";
-}
+    }
 }

@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 
 <head>
+    <title>TOURS AND TRAVEL</title>
+</head>
 
 <body>
-    <title>TOURS AND TRAVEL</title>
+
     <link rel="stylesheet" href="./view/eventCard.css" />
 
     <form action="" method="POST" enctype="">
@@ -49,6 +51,6 @@
             ?>
         </div>
 </body>
-</head>
+
 
 </html>

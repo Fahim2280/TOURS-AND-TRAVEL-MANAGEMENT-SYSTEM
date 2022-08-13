@@ -36,6 +36,7 @@
             $num = mysqli_num_rows($result);
             if ($num > 0) {
                 while ($data = mysqli_fetch_assoc($result)) {
+                    $_GET['V'];
                     $img = $data['image'];
                     echo "
         <tr>

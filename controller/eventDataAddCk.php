@@ -10,7 +10,7 @@ $Food = $_REQUEST['Food'];
 $Price = $_REQUEST['Price'];
 $imagename = $_FILES['file']['name'];
 $tmp_loc = $_FILES['file']['tmp_name'];
-
+$_GET['A'];
 $uploc = '../image/';
 
 if (!empty($imagename)) {

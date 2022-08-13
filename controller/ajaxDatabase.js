@@ -7,6 +7,7 @@ function showFoodData(str) {
   xhttp.onload = function () {
     document.getElementById("View").innerHTML = this.responseText;
   };
-    xhttp.open("GET", "eventDataView.php?V=" + str);
+    xhttp.open("GET", "../view/eventDataView.php?V=" + str);
     xhttp.send();
+    //../view/eventDataAdd?A=.php 
 }

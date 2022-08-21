@@ -29,7 +29,7 @@
                 <th>Image</th>
             </tr>
             <?php
-            require_once("../model/dbConnection.php");
+            require_once("../model/eventDbConnection.php");
 
             $result = showAllEvent();
 

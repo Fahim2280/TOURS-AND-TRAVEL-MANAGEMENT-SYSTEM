@@ -1,20 +1,7 @@
 <?php
 
-$host = "localhost";
-$dbname = "tours_and_travel";
-$dbpass = "";
-$dbuser = "root";
+require_once('dbConnection.php');
 
-function getConnection()
-{
-    global $host;
-    global $dbname;
-    global $dbpass;
-    global $dbuser;
-
-    $conn = mysqli_connect($host, $dbuser, $dbpass, $dbname);
-    return $conn;
-}
 
 function showAllEvent()
 {

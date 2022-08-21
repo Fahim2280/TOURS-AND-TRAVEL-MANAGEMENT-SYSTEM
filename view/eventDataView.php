@@ -7,7 +7,6 @@
 <body>
 
     <h1>Data table</h1>
-    <script src="../controller/search.js"></script>
     <table align="center">
         <tr>
             <td>SEARCH</td>
@@ -59,7 +58,7 @@
     </form>
 
     <div id="display"></div>
-
+    <script src="../controller/search.js"></script>
 </body>
 
 </html>

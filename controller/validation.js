@@ -7,7 +7,7 @@ let Price = document.getElementById("Price").value;
 let file = document.getElementById("file").value;
 let SERIAL = document.getElementById("SERIAL").value;
 
-function validate() {
+function eventvalidated() {
   if (Name != "" || H_M_day != "" || Description != "" || Place_Name != "" || Food != "" || Price != "" || file != "" || SERIAL != "") {
     return true;
   } else {

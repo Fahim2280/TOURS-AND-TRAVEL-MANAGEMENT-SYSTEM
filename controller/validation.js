@@ -8,7 +8,16 @@ let file = document.getElementById("file").value;
 let SERIAL = document.getElementById("SERIAL").value;
 
 function eventvalidated() {
-  if (Name != "" || H_M_day != "" || Description != "" || Place_Name != "" || Food != "" || Price != "" || file != "" || SERIAL != "") {
+  if (
+    Name != "" ||
+    H_M_day != "" ||
+    Description != "" ||
+    Place_Name != "" ||
+    Food != "" ||
+    Price != "" ||
+    file != "" ||
+    SERIAL != ""
+  ) {
     return true;
   } else {
     alert(" cannot be blank");

@@ -18,6 +18,6 @@ if ($SERIAL == null || $breakfast == null || $launch == null || $dinner == null 
     $data['launch'] = $launch;
     $data['dinner'] = $dinner;
     $data['snacks'] = $snacks;
-    updateFood($data);
+    addFood($data);
     echo "<h1 align= center> UPDATE SUCCESSFULLY <h1/>";
 }

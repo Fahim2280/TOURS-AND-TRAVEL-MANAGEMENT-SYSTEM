@@ -13,11 +13,11 @@ function showAllFood()
     return $result;
 }
 
-function updateFood($data){
+function addFood($data){
 
     $conn = getConnection();
 
-    $sql = "insert into food  ( breakfast, launch, dinner,snacks) values( '{$data['breakfast']}', '{$data['launch']}','{$data['dinner']}','{$data['snacks']}')";
+    $sql = "insert into food  (SERIAL, breakfast, launch, dinner, snacks) values( '{$data['SERIAL']}','{$data['breakfast']}', '{$data['launch']}','{$data['dinner']}','{$data['snacks']}')";
 
     if (mysqli_query($conn, $sql)) {
         return;
@@ -30,7 +30,7 @@ function deleteFood($data){
 
     $conn = getConnection();
 
-    $sql = "delete from food where serial='{$data['serial']}'";
+    $sql = "delete from food where SERIAL='{$data['SERIAL']}'";
 
 
     if (mysqli_query($conn, $sql)) {

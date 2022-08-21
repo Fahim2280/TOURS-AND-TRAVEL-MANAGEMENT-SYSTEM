@@ -26,4 +26,21 @@ function updateFood($data){
     }
 }
 
+function deleteFood($data){
+
+    $conn = getConnection();
+
+    $sql = "delete from food where serial='{$data['serial']}'";
+
+
+    if (mysqli_query($conn, $sql)) {
+        return;
+    } else {
+        return false;
+    }
+
+}
+
+
+
 ?>

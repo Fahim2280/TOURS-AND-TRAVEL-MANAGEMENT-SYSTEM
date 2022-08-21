@@ -26,6 +26,21 @@ function addFood($data){
     }
 }
 
+function updateFood($data){
+
+    $conn = getConnection();
+
+     $sql = "update food SET breakfast='{$data['breakfast']}',launch='{$data['launch']}',dinner='{$data['dinner']}',snacks='{$data['snacks']}' WHERE SERIAL= {$data['SERIAL']}";
+
+
+    if (mysqli_query($conn, $sql)) {
+        return;
+    } else {
+        return false;
+    }
+
+}
+
 function deleteFood($data){
 
     $conn = getConnection();
@@ -40,6 +55,8 @@ function deleteFood($data){
     }
 
 }
+
+
 
 
 

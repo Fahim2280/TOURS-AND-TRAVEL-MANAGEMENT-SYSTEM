@@ -1,5 +1,4 @@
 <?php 
-
 require_once('../model/foodDbConnection.php');
 
 $SERIAL = $_REQUEST['SERIAL'];
@@ -9,7 +8,7 @@ $dinner = $_REQUEST['dinner'];
 $snacks = $_REQUEST['snacks'];
 
 
-if ($SERIAL == null || $breakfast == null || $launch == null || $dinner == null || $snacks == null ) {
+if ($SERIAL == null || $breakfast == null || $launch == null || $dinner == null || $snacks == null) {
     echo "<h1 align= canter> PLEASE ADD INFORMATION </h1>";
     return;
 } else {
@@ -18,6 +17,8 @@ if ($SERIAL == null || $breakfast == null || $launch == null || $dinner == null 
     $data['launch'] = $launch;
     $data['dinner'] = $dinner;
     $data['snacks'] = $snacks;
-    addFood($data);
+    updateFood($data);
     echo "<h1 align= center> UPDATE SUCCESSFULLY <h1/>";
 }
+
+?>

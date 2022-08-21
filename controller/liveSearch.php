@@ -1,5 +1,5 @@
 <?php
-require_once("../model/dbConnection.php");
+require_once("../model/eventDbConnection.php");
 if (isset($_GET['input'])) {
     $result = liveSearch($input);
     $input = $_GET['input'];

@@ -1,5 +1,5 @@
 <?php
-require_once ('../model/dbConnection.php');
+require_once ('../model/eventDbConnection.php');
 
 $SERIAL = $_REQUEST['SERIAL'];
 

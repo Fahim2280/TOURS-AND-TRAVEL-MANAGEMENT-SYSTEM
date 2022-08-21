@@ -6,7 +6,7 @@
     <title>TOURS AND TRAVEL | Details</title>
     <link rel="stylesheet" href="./readMore.css" />
         <!-- <?php
-                require_once('../model/dbConnection.php');
+                require_once('../model/eventDbConnection.php');
                 if (isset($_GET['serial'])) {
                     $serial = $_GET['serial'];
                     $result = columnData($serial);
@@ -27,7 +27,7 @@
 
 </html> -->
 <?
-require_once("../model/dbConnection.php");
+require_once("../model/eventDbConnection.php");
 
 $result = showAllEvent();
 

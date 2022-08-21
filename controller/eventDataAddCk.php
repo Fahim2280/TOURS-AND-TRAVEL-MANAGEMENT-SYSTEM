@@ -1,6 +1,6 @@
 
 <?php
-require_once('../model/dbConnection.php');
+require_once('../model/eventDbConnection.php');
 
 $Name = $_REQUEST['Name'];
 $H_M_day = $_REQUEST['H_M_day'];

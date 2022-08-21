@@ -58,7 +58,7 @@
         <div class="eventCard">
             <?php
 
-            require_once('./model/dbConnection.php');
+            require_once('./model/eventDbConnection.php');
             $result = showAllEvent();
             while ($row = mysqli_fetch_assoc($result)) {
                 $img = $row['image'];

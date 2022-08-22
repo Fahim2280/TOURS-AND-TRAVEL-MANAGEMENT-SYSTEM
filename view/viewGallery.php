@@ -10,9 +10,6 @@
     <link rel="stylesheet" href="./galleryCard.css" />
 
     <form action="" method="post" enctype="multipart/form-data">
-        <tr>
-            <td><a href="../index.php">Back</a></td>
-        </tr>
         <table align="center">
             <tr>
                 <td>SEARCH</td>

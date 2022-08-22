@@ -46,7 +46,7 @@
             </tr>
         </table>
     </fieldset>
-    <div id=" livesearch"></div>
+    <div id="livesearch"></div>
     <div id="demo"></div>
     <div class="eventCard">
         <?php

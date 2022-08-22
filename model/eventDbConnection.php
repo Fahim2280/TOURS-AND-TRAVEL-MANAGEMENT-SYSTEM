@@ -69,11 +69,11 @@ function columnData($serial)
     return $result;
 }
 
-function liveSearch($input){
+function liveSearch(){
     $conn = getConnection();
-
-    $sql= "select * from event where Name LIKE '{$input}%' OR H_M_day LIKE'{$input}%' OR Description LIKE'{$input}%' OR serial LIKE'{$input}%' OR Place_Name LIKE'{$input}%' Food LIKE'{$input}%' OR `Price LIKE'{$input}%' ";
     
+    $sql= "select * from event where Name LIKE  OR H_M_day LIKE OR Description LIKE OR serial LIKE OR Place_Name LIKE Food LIKE OR Price LIKE ";
+ 
     $result = mysqli_query($conn, $sql);
     mysqli_close($conn);
     return $result;

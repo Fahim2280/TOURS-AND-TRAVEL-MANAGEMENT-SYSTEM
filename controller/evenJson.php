@@ -1,7 +1,7 @@
 <?php
 require_once("../model/eventDbConnection.php");
 
-$result = showAllEvent();
+$result = liveSearch();
 
 $num = mysqli_num_rows($result);
 $q = $_GET["q"];

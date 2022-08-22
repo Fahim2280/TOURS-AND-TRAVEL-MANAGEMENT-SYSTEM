@@ -1,24 +1,24 @@
 <?php
-require_once("../model/eventDbConnection.php");
+require_once('../model/eventDbConnection.php');
 
-$result = liveSearch();
+$SEARCH = $_GET['SEARCH'];
 
-$num = mysqli_num_rows($result);
-$q = $_GET["q"];
-$hint = "";
+if ($SEARCH == null) {
+    echo "";
+    return;
+}else{
+    $data['SEARCH'] = $SEARCH;
 
-if ($num > 0) {
-    while ($data = mysqli_fetch_assoc($result)) {
-        $djson= json_encode($data);
-        echo $djson;
+    $result = liveSearch($data);
+    $num = mysqli_num_rows($result);
+    if ($num > 0) {
+        while ($row = mysqli_fetch_assoc($result)) {
+            $djson = json_encode($row);
+            echo $djson;
+        }
+        mysqli_free_result($result);
     }
+    liveSearch($data);
 }
-
-if ($hint == "") {
-    $response = "no suggestion";
-} else {
-    $response = $hint;
-}
-echo $response;
 
 ?>

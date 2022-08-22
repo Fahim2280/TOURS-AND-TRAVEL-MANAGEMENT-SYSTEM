@@ -57,7 +57,7 @@ function updateEvent($data)
     }
 }
 
-function columnData($serial)
+function columnData()
 {
     $conn = getConnection();
 
@@ -69,10 +69,10 @@ function columnData($serial)
     return $result;
 }
 
-function liveSearch(){
+function liveSearch($data){
     $conn = getConnection();
     
-    $sql= "select * from event where Name LIKE  OR H_M_day LIKE OR Description LIKE OR serial LIKE OR Place_Name LIKE Food LIKE OR Price LIKE ";
+    $sql="select * from event where going_to like '%{$data['SEARCH']}%'";
  
     $result = mysqli_query($conn, $sql);
     mysqli_close($conn);

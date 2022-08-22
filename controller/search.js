@@ -33,6 +33,6 @@ function showResult(str) {
       document.getElementById("livesearch").style.border = "1px solid #A5ACB2";
     }
   };
-  xmlhttp.open("GET", "../controller/evenJson.php?SEARCH=" + str, true);
+  xmlhttp.open("GET", "../controller/evenJson.php?serial=" + str, true);
   xmlhttp.send();
 }

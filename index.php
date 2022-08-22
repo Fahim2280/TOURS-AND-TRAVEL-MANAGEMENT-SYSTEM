@@ -39,7 +39,7 @@
                 <h1>Booking.com</h1>
                 <table>
                     <tr>
-                        <td>Search </td>
+                        <td>Search</td>
                         <td><input type="text" name="Name" value="" id="searchId" placeholder="searc"></td>
                     </tr>
                     <tr>

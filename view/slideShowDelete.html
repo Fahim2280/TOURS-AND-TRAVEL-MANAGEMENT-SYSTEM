@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <head>
-    <title>TOURS AND TRAVEL | Food Data</title>
+    <title>TOURS AND TRAVEL | SlideShow Data</title>
 </head>
     <body>
-    
-        <form action="../controller/slideShowDeleteCK.php" method="post" enctype="multipart/form-data">
+       
+        <form action="../controller/slideShowDeleteCK.php" id="from" method="post" enctype="multipart/form-data" onsubmit="return deletedValdate()">
 
         <h1>Delet data</h1>
         <table>
+            <tr>
+                <td>
+                    <div id="messge"></div>
+                </td>
+            </tr>
             <tr>
                 <td>SERIAL</td>
                 <td><input type="text" id="SERIAL" name="SERIAL" value="" ></td>
@@ -18,7 +23,7 @@
         </table>
 
     </form>
-
+    <script defer src="../controller/validation.js"></script>
     </body>
 
 </html>

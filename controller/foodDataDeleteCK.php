@@ -9,5 +9,6 @@ if ($SERIAL == null) {
 } else {
     $data['SERIAL'] = $SERIAL;
     deleteFood($data);
+    header("location: ../view/foodDataDelete.html");
 }
 ?>

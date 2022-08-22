@@ -8,6 +8,7 @@ if ($SERIAL == null) {
     return;
 } else {
     $data['serial'] = $SERIAL;
-deleteEvent($data);
+    deleteEvent($data);
+    header("location: ../view/evendataDelete.html");
 }
 ?>

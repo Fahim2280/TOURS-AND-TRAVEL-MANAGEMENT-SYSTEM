@@ -9,6 +9,7 @@ if ($SERIAL == null) {
 } else {
     $data['SERIAL'] = $SERIAL;
     deleteSlideShow($data);
+    header("location: ../view/slideShowDelete.html");
 }
 
 ?>

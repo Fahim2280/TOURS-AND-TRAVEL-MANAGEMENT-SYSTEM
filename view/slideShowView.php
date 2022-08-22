@@ -26,8 +26,8 @@
                     $img = $data['image'];
                     echo "
         <tr>
-            <td>" . $data['SERIAL'] . "</td>
-            <td>" . $data['Name'] . "</td> 
+            <td>" . $data['serial'] . "</td>
+            <td>" . $data['name'] . "</td> 
             <td> <img src='$img' alt='' srcset='' width='100' height='100'></td>
         </tr>";
                 }

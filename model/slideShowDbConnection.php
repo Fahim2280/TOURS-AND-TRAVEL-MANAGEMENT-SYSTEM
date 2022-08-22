@@ -38,4 +38,17 @@ function deleteSlideShow($data){
     }
 }
 
+function updateSlideShow($data){
+
+    $conn = getConnection();
+
+    $sql = "update slideshow SET Name='{$data['Name']}' WHERE SERIAL= {$data['SERIAL']}";
+
+    if (mysqli_query($conn, $sql)) {
+        return;
+    } else {
+        return false;
+    }
+}
+
 ?>

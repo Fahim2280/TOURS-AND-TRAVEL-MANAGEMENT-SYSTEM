@@ -2,17 +2,14 @@
 <head>
     <title>TOURS AND TRAVEL | Event Data</title>
 </head>
-<body>
-        
-        
-    <form action="../controller/eventDataAddCk.php" method="post" enctype="multipart/form-data" onsubmit="return eventvalidated()">
+<body>         
+    <form action="../controller/eventDataAddCk.php" method="post" enctype="multipart/form-data" onsubmit="return eventDataValdate()">
 
         <h1>Card data</h1>
         <table>
             <tr>
                 <td>Place name </td>
                 <td><input type="text" id="Name" name="Name" value="" ></td>
-                <td><small>Error message</small></td>
             </tr>
             <tr>
                 <td>How many day </td>

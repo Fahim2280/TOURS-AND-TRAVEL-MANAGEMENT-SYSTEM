@@ -18,7 +18,7 @@ if ($SERIAL == null || $breakfast == null || $launch == null || $dinner == null 
     $data['dinner'] = $dinner;
     $data['snacks'] = $snacks;
     updateFood($data);
-    echo "<h1 align= center> UPDATE SUCCESSFULLY <h1/>";
+    header("location: ../view/foodDataUpdate.html");
 }
 
 ?>

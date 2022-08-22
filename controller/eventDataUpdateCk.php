@@ -22,6 +22,6 @@ if ($SERIAL == null || $Name == null || $H_M_day == null || $Description ==null 
    $data['Food'] = $Food;
    $data['Price'] = $Price;
    updateEvent($data);
-   echo "<h1 align= center> UPDATE SUCCESSFULLY <h1/>";
+   header("location: ../view/evenDataUpdate.html");
 }
 

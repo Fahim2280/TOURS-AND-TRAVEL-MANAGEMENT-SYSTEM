@@ -19,7 +19,7 @@ if ($Name == null || $SERIAL == null || $imagename == null || $tmp_loc == null) 
     $data['SERIAL'] = $SERIAL;
     $data['file_location'] = $uploc . $imagename;
     addSlideShow($data);
-    echo "<h1 align= center> NEW TRIP ADDED SUCCESSFULLY </h1>";
+    header("location: ../view/slideShowAdd.html");
 }
 
 ?>

@@ -10,7 +10,6 @@ $Food = $_REQUEST['Food'];
 $Price = $_REQUEST['Price'];
 $imagename = $_FILES['file']['name'];
 $tmp_loc = $_FILES['file']['tmp_name'];
-$_GET['A'];
 $uploc = '../image/';
 
 if (!empty($imagename)) {
@@ -30,7 +29,7 @@ if ($Name == null || $H_M_day == null || $Description == null || $Place_Name == 
     $data['Price'] = $Price;
     $data['file_location'] = $uploc . $imagename;
     addEvent($data);
-    echo "<h1 align= center> NEW TRIP ADDED SUCCESSFULLY </h1>";
+    header("location: ../view/evenDataAdd.html");
 }
 
 ?>

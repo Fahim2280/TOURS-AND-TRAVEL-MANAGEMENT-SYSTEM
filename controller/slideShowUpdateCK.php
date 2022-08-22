@@ -11,7 +11,7 @@ if ($SERIAL == null || $Name == null) {
     $data['SERIAL'] = $SERIAL;
     $data['Name'] = $Name;
     updateSlideShow($data);
-    echo "<h1 align= center> UPDATE SUCCESSFULLY <h1/>";
+    header("location: ../view/slideShowUpdate.html");
 }
 
 

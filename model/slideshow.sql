@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 22, 2022 at 07:36 PM
+-- Generation Time: Aug 23, 2022 at 07:55 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.11
 
@@ -32,6 +32,15 @@ CREATE TABLE `slideshow` (
   `image` varchar(100) NOT NULL,
   `name` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `slideshow`
+--
+
+INSERT INTO `slideshow` (`serial`, `image`, `name`) VALUES
+(1, '../image/Sundarban-Khulna-Bangladesh.jpg', 'Sundarban '),
+(2, '../image/pangthumai-waterfall.jpg', 'sylet'),
+(3, '../image/Sonar-2009031349.jpg', 'sonarga');
 
 --
 -- Indexes for dumped tables

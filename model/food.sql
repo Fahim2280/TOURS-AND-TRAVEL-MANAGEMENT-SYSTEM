@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 22, 2022 at 07:35 PM
+-- Generation Time: Aug 23, 2022 at 07:54 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.11
 
@@ -34,6 +34,13 @@ CREATE TABLE `food` (
   `dinner` varchar(100) NOT NULL,
   `snacks` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `food`
+--
+
+INSERT INTO `food` (`SERIAL`, `breakfast`, `launch`, `dinner`, `snacks`) VALUES
+('01', 'pota and vaji', 'khichuri', 'vat mach', 'chps');
 
 --
 -- Indexes for dumped tables

@@ -1,14 +1,20 @@
 <?php
 require_once('../model/eventDbConnection.php');
+$SEARCH = $_REQUEST['SEARCH'];
+if ($SEARCH == null) {
+    echo "";
+    return;
+} else {
+    $data['SEARCH'] = $SEARCH;
 
-if (isset($_GET['serial'])) {
-    $SEARCH = $_GET['serial'];
-    $result = liveSearch($SEARCH);
-    $num = mysqli_num_rows($result);
-    if ($num > 0) {
+    //$data['SEARCH'] = $SEARCH;
+    $result = liveSearch($data);
+    //$num = mysqli_num_rows($result);
+    if (mysqli_num_rows($result) > 0) {
         while ($row = mysqli_fetch_assoc($result)) {
-            $djson = json_encode($row);
-            $djson['serial'];
+            // $djson = json_encode($row);
+            // $djson['serial'];
+            echo $row['Name'];
         }
         mysqli_free_result($result);
     }

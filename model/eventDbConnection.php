@@ -72,7 +72,7 @@ function columnData()
 function liveSearch($data){
     $conn = getConnection();
     
-    $sql="select * from event where going_to like '%{$data['serial']}%'";
+    $sql="select * from event where going_to like '%{$data['SEARCH']}%'";
 
     $result = mysqli_query($conn, $sql);
     mysqli_close($conn);

@@ -34,11 +34,15 @@
     </div>
     <fieldset style="background-color:DodgerBlue;">
         <h1>Booking.com</h1>
-        <table>
+        <from action="../controller/evenJson.php" method="post" enctype="multipart/form-data">
             <tr>
                 <td>Search</td>
-                <td><input type="text" name="Name" value="" id="searchId" placeholder="searc" size="30" onkeyup="showResult(this.value)"></td>
+                <td><input type="text" name="SEARCH" value="" id="searchId" placeholder="searc" size="30" onkeyup="showResult(this.value)"></td>
             </tr>
+
+        </from>
+        <table>
+
             <tr>
                 <td><a href="index.php">Home</a></td>
                 <td><button type="button" onclick="loadDoc()">View Gallary</button></td>
